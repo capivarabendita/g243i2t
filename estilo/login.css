@@ -4,6 +4,8 @@
 .pagina-login{
     background-color:aquamarine ;
 }
+
+
 .login{
     width: 100vw;
     height: 100vh;
@@ -11,6 +13,8 @@
     align-items: center;
     justify-content: center;
 }
+
+
 .form-login{
     background-color: rgb(202, 255, 192);
     width: 300px;
@@ -19,21 +23,63 @@
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    border-radius: 20px;
 }
 
-.form-login input{
-    width: 80%;
-}
+
 .form-login button{
     width: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
     background-color: rgb(190, 255, 255);
+    border-radius: 5px;
+    border: none;
 }
 
-.form-login label{
-    display: block;
-    background-color: rgb(104, 184, 255);
-    color: rgb(255, 0, 0);
+.form-login button:hover{
+    background-color: rgb(0, 4, 255); 
+    color: rgb(255, 255, 255);
+    
 }
+
+
+.campo-input{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.campo-input input{
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid aquamarine ;
+    border-radius: .5rem;
+    color: black;
+}
+
+.campo-input label{
+    position: relative;
+    top: 30%;
+    left: 1rem;
+    transform: translateY(-30%);
+    color: black;
+    pointer-events: none;
+    padding: 0 .3rem;
+    background-color: rgb(190, 255, 255);
+    transition: 200ms ease-in-out top,
+                200ms ease-in-out font-size,
+                200ms ease-in-out font-color;
+}
+.campo-input input:focus + label,
+.campo-input input:valid +label{
+    top: -10px;
+    font-size: .8rem;
+    color: black;
+}
+

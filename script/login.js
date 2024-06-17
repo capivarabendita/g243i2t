@@ -16,7 +16,7 @@ let usuariologado = null;
         let senha = inputsenha.value;
         if(usuario){
             if(usuario ==="cabranoiada"){
-                if(senha === "123"){
+                if(senha === "ASQWgsaw"){
                     window.location.href = "/tmp/guest-flg3kk/Downloads/g243i2t-main/logado.html";
                 }
             }else{
